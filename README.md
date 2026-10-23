@@ -8,11 +8,9 @@ void main() {
   int ru = 1000;
   double dollar = 81.13;
 
-  // Безопасный парсинг строк
   String rawInput = "450.50";
   double? parsedPrice = double.tryParse(rawInput);
 
-  // Округление и форматирование
   double itemPrice = ru * dollar;
   print("До 2 знаков: ${itemPrice.toStringAsFixed(2)}"); // "129.90"
 }
